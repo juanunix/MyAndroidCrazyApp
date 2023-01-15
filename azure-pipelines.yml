@@ -31,7 +31,7 @@ steps:
     apksign: true
     apksignerKeystoreFile: 'production.keystore'
     apksignerKeystorePassword: 'Dce$2005'
-    apksignerKeystoreAlias: 'android'
+    apksignerKeystoreAlias: 'localiza'
     apksignerKeyPassword: 'Dce$2005'
     apksignerArguments: --out $(Build.SourcesDirectory)/app/build/outputs/apk/release/my-crazy-app.release.apk
     zipalign: true
