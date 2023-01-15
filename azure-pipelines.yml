@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'macOS-10.13'
+  vmImage: 'macOS-12'
 
 steps:
 - task: Gradle@2
@@ -29,10 +29,10 @@ steps:
   inputs:
     apkFiles: '**/*.apk' 
     apksign: true
-    apksignerKeystoreFile: 'production.keystore'
-    apksignerKeystorePassword: 'keystorepwd'
-    apksignerKeystoreAlias: 'key0'
-    apksignerKeyPassword: 'aliaspwd'
+    apksignerKeystoreFile: 'keystore.jks'
+    apksignerKeystorePassword: 'Dce$2005'
+    apksignerKeystoreAlias: 'android'
+    apksignerKeyPassword: 'android'
     apksignerArguments: --out $(Build.SourcesDirectory)/app/build/outputs/apk/release/my-crazy-app.release.apk
     zipalign: true
 
