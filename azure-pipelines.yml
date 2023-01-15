@@ -29,7 +29,7 @@ steps:
   inputs:
     apkFiles: '**/*.apk' 
     apksign: true
-    apksignerKeystoreFile: 'keystore.jks'
+    apksignerKeystoreFile: 'production.keystore'
     apksignerKeystorePassword: 'Dce$2005'
     apksignerKeystoreAlias: 'android'
     apksignerKeyPassword: 'android'
